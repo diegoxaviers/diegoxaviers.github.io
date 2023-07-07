@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>GAMES INCRÍVEIS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+            <a href="index.html" class="logo"><span>GAMES</span><br>INCRÍVEIS</a>
+                <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="playstation.html">PLAYSTATION</a></li>
+                    <li><a href="xbox.html">XBOX</a></li>
+                    <li><a href="nintendo.html">NINTENDO</a></li>
+                    <li><a href="pc.html">PC</a></li>
+                </ul>
+            </div>
+    </header>
+
+<!--CONSOLE-->
+
+<section class="console">
+    <section class="other-news">
+            <div class="local">
+                <img src="images/gta-5.jpg"></a>
+                <h1>Rockstar encerra servidores de GTA Online para PlayStation 3 e XBox 360</h1>
+                <p>Rockstar encerra servidores de GTA Online para PlayStation 3 e XBox 360 no dia 16 de dezembro de 2021, sendo que a partir do dia 16 de setembro não será mais possível adquirir Sharks Cards para o game nestas plataformas. Lembrando que há outras restrições provenientes com a decisão como não transferência de dados do personagem para consoles mais atuais e o dinheiro usado, bem como moedas e itens virtuais não serão passíveis de migração.
+                <br>
+                <br>
+                Além de GTA Online, outros jogos da produtora encerrarão as atividades em rede para PlayStation 3 e XBox 360 como La Noire e Max Payne 3, mas estes a partir do dia 16 de setembro deste anoe o modo história de cada não será afetado. Estes dois games foram lançados, respectivamente, em maio de 2011 e 2012.
+                <br>
+                <br>
+                Com isso, a Rockstar encerra servidores de GTA, Max Payne 3 e LA Noire, a qual é uma decisão aguardada com a migração natural dos jogadores para os consoles mais atuais. para maioresesclarecimentos quanto ao não reembolso ou a não transferência do personagem, acesse o site da oficial da Rockstar para outros detalhes da decisão da empresa desenvolvedora de jogos e ocontrato de licença dos referidos games.
+                </p>
+                <iframe src="https://www.youtube.com/embed/QrH18PlV4dE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    </section>
+
+
+<!-- FOOTER -->
+
+<section class="footer">
+    <p>Esse site foi desenvolvido por Diego Xavier da Silva.<br>Todos direitos reservados.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+    </div>
+</section>
+
+
+
+<!-- JavaScript -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0px";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-220px";
+    }
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+</body>
+</html>

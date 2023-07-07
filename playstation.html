@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>GAMES INCRÍVEIS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+            <a href="index.html" class="logo"><span>GAMES</span><br>INCRÍVEIS</a>
+                <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="playstation.html">PLAYSTATION</a></li>
+                    <li><a href="xbox.html">XBOX</a></li>
+                    <li><a href="nintendo.html">NINTENDO</a></li>
+                    <li><a href="pc.html">PC</a></li>
+                </ul>
+            </div>
+    </header>
+
+<!--CONSOLE-->
+
+<section class="console">
+    <div class="row">
+        <div class="console-col">
+        <h1>Ultimo Grande Evento</h1>
+        <p>Sem participar da E3 apenas os jogos multiplataforma apareceram para os consoles da Sony, no video ao lado temos um compilado dos jogos que são promessa pro futuro da nova geração.</p>
+    </div>
+        <iframe src="https://www.youtube.com/embed/xF_DThGxPWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <section class="other-news">
+            <div class="local">
+                <img src="images/eldenring2.jpg"></a>
+                <h1>Elden Ring</h1>
+                <p>Baseado em lendas escritas para o jogo por George R.R. Martin. Elden Ring é um mundo cheio de mistério e perigo, pronto para ser explorado e descoberto.</p>
+                <iframe src="https://www.youtube.com/embed/E3Huy2cdih0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="local">
+                <img src="images/Dyinglight2.jpg"></a>
+                <h1>Dying Light 2: novo trailer de gameplay, HQ grátis e mais</h1>
+                <p>Mantenha suas habilidades de parkout afiadas, pois as novidades reveladas para Dying Light 2 mostraram que os perigos do jogo estão apenas no início. O novo episódio da série Dying 2 Know - programa da Techland que revela novidades do game - nos trouxe um novo trailer de gameplay, uma HQ digital grátis e mais.</p>
+                <iframe src="https://www.youtube.com/embed/uL6OeuicjyU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="local">
+                <img src="images/blightbound.jpg"></a>
+                <h1>Blightbound ganha data de lançamento em julho</h1>
+                <p>O título com um toque sombrio e ao mesmo tempo estiloso chegará já com suporte ao cross-play online e local e colocará três heróis para se aventurarem de seu refúgio da montanha, cada um com uma função específica na equipe (guerreiro, assassino ou mago), enquanto enfrentam as abominações da Praga, uma neve corruptora que envolve a terra.</p>
+                <iframe src="https://www.youtube.com/embed/d-aKXJMGa2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    </section>
+
+
+
+<!-- FOOTER -->
+
+<section class="footer">
+    <p>Esse site foi desenvolvido por Diego Xavier da Silva.<br>Todos direitos reservados.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+    </div>
+</section>
+
+
+
+<!-- JavaScript -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0px";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-220px";
+    }
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+</body>
+</html>

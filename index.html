@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>GAMES INCRÍVEIS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+            <a href="index.html" class="logo"><span>GAMES</span><br>INCRÍVEIS</a>
+                <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="playstation.html">PLAYSTATION</a></li>
+                    <li><a href="xbox.html">XBOX</a></li>
+                    <li><a href="nintendo.html">NINTENDO</a></li>
+                    <li><a href="pc.html">PC</a></li>
+                </ul>
+            </div>
+    </header>
+<section class="banner">
+<div class="text-box">
+    <h1>GAMES INCRÍVEIS</h1>
+    <p>Veja as ultimas novidades do mundo dos jogos em primeira mão com a gente.</p>
+</div>
+</section>
+
+<!--PLATAFORMAS-->
+
+<section class="GAMES">
+    <h1>PLATAFORMAS</h1>
+    <p>Ultimas novidades dos consoles</p>
+
+    <div class="row">
+        <div class="game-news"><a href="playstation.html">
+            <img src="images/PLAYSTATION.png">
+            <div class="layer">
+            <h2>PLAYSTATION 5</h2>
+                <p>Confira os jogos mais aguardados do do ano e todas as novidades do poderoso da Sony</p>
+            </div></a>
+        </div>
+        <div class="game-news">
+            <img src="images/XBOX.png"><a href="xbox.html">
+            <div class="layer">
+            <h2>XBOX SERIES X</h2>
+                <p>Novo trailer da E3 revela novas informações de um dos jogos mas aguardados da nova geração</p>
+            </div>
+        </div></a>
+        <div class="game-news">
+            <img src="images/NINTENDO.png"><a href="nintendo.html">
+            <div class="layer">
+            <h2>NINTENDO SWITCH</h2>
+                <p>Nintendo Direct da E3 apresenta novos lançamentos e DLCs do console</p>
+            </div>
+        </div></a>
+        <div class="game-news">
+            <img src="images/PC.png"><a href="pc.html">
+            <div class="layer">
+            <h2>PC</h2>
+                <p>Steam promete novidades durante a E3, Epic Games mostra </p>
+            </div>
+        </div>
+    </div></a>
+
+</section>
+
+<!-- OUTRAS NOVIDADES -->
+<section class="other-news">
+    <h1>OUTRAS NOVIDADES</h1>
+    <div class="row">
+        <div class="local">
+            <a href="genshin.html"><img src="images/Genshin.jpg"></a>
+            <h3>Genshin Impact</h3>
+            <p>Teste seus conhecimentos no quiz do jogo mais badalado do momento.</p>
+        </div>
+        <div class="local">
+            <a href="gta-online.html"><img src="images/gta-online.jpg"></a>
+            <h3>GTA Online</h3>
+            <p>RockStar anuncia encerramento do modo online para PS3 e XBOX 360.</p>
+        </div>
+        <div class="local">
+            <a href="grandchase.html"><img src="images/grandchase.png"></a>
+            <h3>GRAND CHASE</h3>
+            <p>Depois de 7 anos longe do PC Grand Chase anuncia sua volta ainda este ano.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+<section class="footer">
+    <p>Esse site foi desenvolvido por Diego Xavier da Silva.<br>Todos direitos reservados.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+    </div>
+</section>
+
+
+
+<!-- JavaScript -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0px";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-220px";
+    }
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+</body>
+</html>

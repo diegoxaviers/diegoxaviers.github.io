@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    font-family: 'Signika', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    background: #171b2a;
+}
+body{
+    margin-left: 0;
+    margin-right: 0;
+}
+.logo{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.logo span{
+    font-weight: 10;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 20px 60px;
+    background: #131516;
+    font-size: 1.5rem;
+    z-index: 10000;
+}
+header.sticky{
+    padding: 5px 100px;
+    background: #131516;
+}
+header.sticky ul li a{
+    background-color: #131516;
+}
+header img{
+    position: relative;
+    transition: 0.5s;
+    width: 150px;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.5s;
+}
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.sub-banner{
+    width: 100%;
+    max-height: 200px;
+    background-image: url(images/header-bg.jpg);
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 6rem;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 2rem;
+    color: #fff;
+}
+.box-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid ;
+    border-color: #e6a9d4;
+    padding: 6px 24px;
+    font-size: 2rem;
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+    margin: 20px;
+}
+.box-btn:hover{
+    border: 1px solid #e6a9d4;
+    background: #e6a9d4;
+    transition: .5s;
+}
+header .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    html{
+        font-size: 12px;
+    }
+    .logo img{
+        display: none;
+    }
+   header, header.sticky{
+       padding: 0;
+       font-size: 0.8rem;
+       position: fixed;
+       bottom: 0;
+       top: auto;
+   }
+}
+
+/* GAMES */
+.GAMES{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+}
+p{
+    color: rgb(161, 161, 161);
+    font-size: 2rem;
+}
+.game-news{
+    flex-basis: 24%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.game-news img{
+    width: 100%;
+    display: block;
+    background-position: center;
+    background-size: cover;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: #7a7a7a98;
+}
+.layer h2{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 1.7rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+}
+.layer:hover h2{
+    top: 10%;
+    opacity: 1;
+}    
+.layer p{
+        width: 100%;
+        font-weight: 500;
+        color: #fff;
+        font-size: 1.3rem;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        transition: 0.5s;
+        opacity: 0;
+}
+.layer:hover p{
+        top: 50%;
+        opacity: 1;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: auto;
+}
+
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* OUTRAS NOVIDADES */
+.other-news{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+.local{
+    flex-basis: 30%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.local img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.local h3{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.local p{
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+/* QUIZ */
+.quiz{
+    margin: 200px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-position: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+.quiz h1{
+    color: #fff;
+    text-align: left;
+    margin: 10px 20px;
+}
+.quiz form{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 20px 20px;
+}
+.quiz div{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+@media(max-width: 700px){
+    .quiz h1{
+        font-size: 2.5rem;
+    }
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-top: 25px;
+    font-size: 1.8rem;
+}
+.footer p{
+    font-size: 1rem;
+}
+.icons .fa{
+    color: rgb(133, 106, 209);
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 1.5rem;
+}
+
+/* CONSOLES PAGE */
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    color: #fff;
+    top: 40%;
+    text-align: center;
+    position: relative;
+    font-size: 6rem;
+}
+.sub-header p{
+    margin-top: 15%;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.console{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.console img{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    width: 100%;
+}
+.console-col{
+    flex-basis: 48%;
+    padding: 30px 20px;
+}
+.console-col h1{
+    padding-top: 0;
+    font-size: 3rem;
+}
+.console-col p{
+    padding: 15px 0 25px;
+    font-size: 1.2rem;
+}
+iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}

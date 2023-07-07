@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>GAMES INCRÍVEIS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+            <a href="index.html" class="logo"><span>GAMES</span><br>INCRÍVEIS</a>
+                <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="playstation.html">PLAYSTATION</a></li>
+                    <li><a href="xbox.html">XBOX</a></li>
+                    <li><a href="nintendo.html">NINTENDO</a></li>
+                    <li><a href="pc.html">PC</a></li>
+                </ul>
+            </div>
+    </header>
+
+<!--CONSOLE-->
+
+<section class="console">
+    <div class="row">
+        <div class="console-col">
+        <h1>Ultimo Grande Evento</h1>
+        <p>Apresentando junto com a Bethesda, Microsoft aposta no futuro com jogos de tiro com muita ação e excelentes graficos.</p>
+    </div>
+    <iframe  src="https://www.youtube.com/embed/1YnVzOA2wNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<section class="other-news">
+    <div class="local">
+        <img src="images/HALO-INFINITE.jpg"></a>
+        <h1>Halo Infinite</h1>
+        <p>Halo Infinite, enfim, deu o ar de sua graça na apresentação da Microsoft para a E3 2021. O jogo seria lançado originalmente em novembro de 2020, junto com os novos Xbox Series S e Xbox Series X, mas teve seu lançamento adiado por conta da má recepção a partir do trailer inicial. Agora ele chega no final de 2021, com multiplayer e nova história.</p>
+        <iframe src="https://www.youtube.com/embed/4i86Ckj8xKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="local">
+        <img src="images/STARFIELD.jpg"></a>
+        <h1>STARFIELD</h1>
+        <p>Starfield foi destaque na conferência da Xbox e Bethesda, durante a E3 2021 no IGN Summer of Gaming. O título ganhou data de lançamento.<br>
+            Starfield será lançado exclusivamente para Xbox Series X/S e PC em 11 de novembro de 2022. O jogo também chega ao catálogo do Xbox Game Pass no dia de lançamento.</p>
+            <iframe src="https://www.youtube.com/embed/pYqyVpCV-3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="local">
+        <img src="images/battlefield.jpg"></a>
+        <h1>BATTLEFIELD 2042</h1>
+        <p>Battlefield 2042 recebeu um trailer explosivo de gameplay neste domingo (13), durante o Xbox & Bethesda Games Showcase da E3 2021. Assista abaixo:</p>
+        <iframe src="https://www.youtube.com/embed/WomAGoEh-Ss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+
+
+
+<!-- FOOTER -->
+
+<section class="footer">
+    <p>Esse site foi desenvolvido por Diego Xavier da Silva.<br>Todos direitos reservados.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+    </div>
+</section>
+
+
+
+<!-- JavaScript -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0px";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-220px";
+    }
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+</body>
+</html>

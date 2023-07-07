@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>GAMES INCRÍVEIS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+            <a href="index.html" class="logo"><span>GAMES</span><br>INCRÍVEIS</a>
+                <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="playstation.html">PLAYSTATION</a></li>
+                    <li><a href="xbox.html">XBOX</a></li>
+                    <li><a href="nintendo.html">NINTENDO</a></li>
+                    <li><a href="pc.html">PC</a></li>
+                </ul>
+            </div>
+    </header>
+
+<!--CONSOLE-->
+
+<section class="console">
+    <section class="other-news">
+            <div class="local">
+                <img src="images/grandchasek.png"></a>
+                <h1>GRAND CHASE CLASSIC</h1>
+                <p>Sem nenhum aviso prévio, o RPG online Grand Chase está de volta aos computadores. O jogo produzido pela empresa KOG apareceu na Steam no final da noite da terça-feira (29) já com data de lançamento anunciada para agosto deste ano e inscrições abertas para um periodo de testes nas próximas semanas.
+                <br><br>
+                Pela descrição e vídeos disponíveis na Steam, o jogo intitulado Grand Chase Classic será exatamente o que os brasileiros se acostumaram a jogar no começo dos anos 2000. Para participar do beta aberto, é preciso se inscrever pela página do game na loja da Valve.
+                <br><br>
+                Grand Chase foi lançado em 2006 no Brasil e era distribuído pela Level Up!. Apesar da origem coreana do jogo, foi a comunidade brasileira que bateu o recorde de maior número de jogadores online, com mais de 39 mil pessoas se divertindo nos servidores brasileiros de Grand Chase. O jogo teve seus servidores desligados em 2015.
+                <br><br>
+                <span style="font-size: 1.7rem;">Sucesso retumbante</span>
+                <br><br>
+                E os brasileirinhos daquela época não se esqueceram do sucesso que o jogo fez por aqui. O retorno do game foi muito comentado nas redes sociais, com os fãs comemorando a volta do clássico. 
+                </p>
+                <iframe src="https://www.youtube.com/embed/3gJdA_sG4RE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    </section>
+
+
+<!-- FOOTER -->
+
+<section class="footer">
+    <p>Esse site foi desenvolvido por Diego Xavier da Silva.<br>Todos direitos reservados.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+    </div>
+</section>
+
+
+
+<!-- JavaScript -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0px";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-220px";
+    }
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+</body>
+</html>

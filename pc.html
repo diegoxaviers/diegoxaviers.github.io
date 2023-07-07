@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>GAMES INCRÍVEIS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+            <a href="index.html" class="logo"><span>GAMES</span><br>INCRÍVEIS</a>
+                <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="playstation.html">PLAYSTATION</a></li>
+                    <li><a href="xbox.html">XBOX</a></li>
+                    <li><a href="nintendo.html">NINTENDO</a></li>
+                    <li><a href="pc.html">PC</a></li>
+                </ul>
+            </div>
+    </header>
+
+<!--CONSOLE-->
+
+<section class="console">
+    <div class="row">
+        <div class="console-col">
+        <h1>Genshin Impact: Kazuha fatia tudo em novo trailer de gameplay</h1>
+        <p>Kaedehara Kazuha é o novo personagem 5 estrelas que chega a Genshin Impact. Ele é o primeiro representante da região de Inazuma a oficialmente se tornar jogável.</p>
+    </div>
+    <iframe src="https://www.youtube.com/embed/ST5v7-C3iDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<section class="other-news">
+    <div class="local">
+        <img src="images/sea-of-thieves.png">
+        <h1>Sea of Thieves</h1>
+        <p>Durante seu painel na E3 2021, a Microsoft revelou um novo evento para Sea of Thieves, um de seus jogos multiplayer mais populares da atualidade.Baseado na franquia Piratas do Caribe, da Disney, o evento "Uma Vida de Pirata" já está disponível no jogo e traz o carismático Capitão Jack Sparrow para esse universo digital.</p>
+        <iframe src="https://www.youtube.com/embed/8IPTA7MXgBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="local">
+        <img src="images/grandchaseV.jpg">
+        <h1>Grand Chase retornará após seis anos</h1>
+        <p>Jogo clássico dos anos 2000, Grand Chase retornará ao mercado após o desligamento dos servidores há seis anos.
+            O título desenvolvido pelo estúdio sul-coreano KOG foi listado como produto no Steam. O lançamento está previsto para agosto de 2021, ainda sem um dia específico atribuído. Chamado de Grand Chase Classic, o game será gratuito para jogar no PC. Não há menção sobre a possibilidade de lançamento em outras plataformas, por enquanto.</p>
+            <iframe src="https://www.youtube.com/embed/GS2i5xqfoY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="local">
+            <img src="images/newworld.jpg"></a>
+            <h1>New World</h1>
+            <p>No último fim de semana, a equipe da Amazon Games que está responsável pelo MMO New World resolveu falar um pouco mais sobre o título. Com o apoio de um vídeo explicativo.</p>
+            <iframe src="https://www.youtube.com/embed/m1C5dLnvlzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+</section>
+
+
+<!-- FOOTER -->
+
+<section class="footer">
+    <p>Esse site foi desenvolvido por Diego Xavier da Silva.<br>Todos direitos reservados.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+    </div>
+</section>
+
+
+
+<!-- JavaScript -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0px";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-220px";
+    }
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+</body>
+</html>

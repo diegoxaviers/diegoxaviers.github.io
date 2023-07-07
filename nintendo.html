@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>GAMES INCRÍVEIS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+            <a href="index.html" class="logo"><span>GAMES</span><br>INCRÍVEIS</a>
+                <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="playstation.html">PLAYSTATION</a></li>
+                    <li><a href="xbox.html">XBOX</a></li>
+                    <li><a href="nintendo.html">NINTENDO</a></li>
+                    <li><a href="pc.html">PC</a></li>
+                </ul>
+            </div>
+    </header>
+
+<!--CONSOLE-->
+
+<section class="console">
+    <div class="row">
+        <div class="console-col">
+        <h1>Ultimo Grande Evento</h1>
+        <p>Nintendo aproveitou a E3 pra apresentar diversos jogos exclusivos e prolongar ainda mais o suporte para o Nintendo Switch.</p>
+    </div>
+    <iframe src="https://www.youtube.com/embed/IH7QtiX1I7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</section>
+
+<section class="other-news">
+    <div class="local">
+        <img src="images/mario-party.jpg"></a>
+        <h1>Mario Party Superstars</h1>
+        <p>ANintendo anunciou um novo Mario Party durante a Nintendo Direct da E3 2021. Chamado Mario Party Superstars, o jogo está previsto para 29 de outubro. Confira o trailer de revelação abaixo:</p>
+        <iframe src="https://www.youtube.com/embed/lTiFERyYlPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="local">
+        <img src="images/metroid-prime.jpg"></a>
+        <h1>Metroid Dread</h1>
+        <p>Metroid Dread é um futuro jogo de ação e aventura desenvolvido pela MercurySteam e Nintendo que será publicado para o Nintendo Switch em 8 de outubro de 2021. Inicialmente, o jogo havia sido projetado para o console portátil Nintendo DS mas foi cancelado devido a limitações técnicas.</p>
+        <iframe src="https://www.youtube.com/embed/8NjCICl7dDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="local">
+        <img src="images/ZELDA-BOTW-2.jpg"></a>
+        <h1>Zelda: Breath of the Wild</h1>
+        <p>A Nintendo revelou na E3 2021 o segundo trailer do aguardadíssimo novo The Legend of Zelda, que enquanto não tem um subtítulo oficial, estamos apelidando carinhosamente de Breath of the Wild 2.</p>
+        <iframe src="https://www.youtube.com/embed/Pi-MRZBP91I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+<!-- FOOTER -->
+
+<section class="footer">
+    <p>Esse site foi desenvolvido por Diego Xavier da Silva.<br>Todos direitos reservados.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+    </div>
+</section>
+
+
+
+<!-- JavaScript -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0px";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-220px";
+    }
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
+</body>
+</html>
